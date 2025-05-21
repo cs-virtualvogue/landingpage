@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ร้านชุดเดรสสายฝอ</title>
+
+  <!-- ✅ โหลดฟอนต์ Prompt -->
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: 'Prompt', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: #fff;
+      color: #333;
+    }
+
+    /* === Hero Section === */
+    .hero {
+      background: url('https://celebmix.com/wp-content/uploads/2022/10/kylie-jenner-stole-the-show-at-paris-fashion-week-ss-2023-01-1024x576.png') no-repeat center center/cover;
+      height: 90vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      position: relative;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 0, 0, 0.4);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      max-width: 800px;
+      padding: 0 1rem;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      font-weight: 700;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+      font-weight: 300;
+    }
+
+    .hero a {
+      background: #ff4081;
+      color: white;
+      padding: 0.8rem 1.5rem;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .hero a:hover {
+      background: #e91e63;
+    }
+
+    /* === Categories === */
+    .categories {
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+
+    .categories h2 {
+      font-size: 2rem;
+      color: #d81b60;
+      margin-bottom: 2rem;
+      font-weight: 600;
+    }
+
+    .category-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .category {
+      background: #ffe4ec;
+      padding: 1.5rem;
+      border-radius: 20px;
+      font-size: 1.1rem;
+      color: #c2185b;
+      font-weight: 500;
+    }
+
+    /* === Product Highlight === */
+    .products {
+      padding: 4rem 2rem;
+      background: #fef6f8;
+      text-align: center;
+    }
+
+    .products h2 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      color: #d81b60;
+      font-weight: 600;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .product {
+      background: #fff;
+      border-radius: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      padding: 1rem;
+    }
+
+    .product img {
+      width: 100%;
+      border-radius: 15px;
+      margin-bottom: 1rem;
+    }
+
+    .product h3 {
+      font-size: 1.1rem;
+      color: #e91e63;
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+    }
+
+    .product p {
+      font-size: 0.95rem;
+      color: #555;
+      font-weight: 300;
+    }
+
+    /* === Contact === */
+    .contact {
+      background: #ffe4ec;
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+
+    .contact h2 {
+      font-size: 2rem;
+      color: #c2185b;
+      font-weight: 600;
+    }
+
+    .contact p {
+      font-size: 1rem;
+      margin: 1rem 0;
+      font-weight: 400;
+    }
+
+    .contact a {
+      display: inline-block;
+      background: #25D366;
+      color: white;
+      padding: 0.8rem 1.5rem;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .contact a:hover {
+      background: #1ebe5b;
+    }
+
+    /* === Footer === */
+    footer {
+      background: #222;
+      color: #ccc;
+      padding: 2rem;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+
+    footer a {
+      color: #ff80ab;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>แซ่บแบบสายฝอ ✨</h1>
+      <p>รวมเดรสดีไซน์ปัง ๆ สำหรับสาวมั่น กล้าใส่ กล้าโชว์ สไตล์อเมริกันยุโรป</p>
+      <a href="https://line.me/R/ti/p/@686sajfu" target="_blank">🛍️ ช้อปเดี๋ยวนี้</a>
+    </div>
+  </section>
+
+  <!-- Categories -->
+  <section class="categories">
+    <h2>หมวดหมู่ชุดเดรส</h2>
+    <div class="category-grid">
+      <div class="category">🔥 เดรสสายเดี่ยว</div>
+      <div class="category">👗 เดรสยาวแหวกขา</div>
+      <div class="category">💃 เดรสคัตเอาท์</div>
+      <div class="category">✨ เดรสกลิตเตอร์</div>
+    </div>
+  </section>
+
+  <!-- Product Highlight -->
+  <section class="products">
+    <h2>สินค้าแนะนำ</h2>
+    <div class="product-grid">
+      <div class="product">
+        <img src="https://i.imgur.com/Xxx0X2L.jpg" alt="เดรส1">
+        <h3>เดรสโทนชมพูหวาน</h3>
+        <p>ผ้ายืดเนื้อดี ใส่แล้วหุ่นเป๊ะเวอร์</p>
+      </div>
+      <div class="product">
+        <img src="https://i.imgur.com/GvGbJhK.jpg" alt="เดรส2">
+        <h3>เดรสสายฝอเปิดหลัง</h3>
+        <p>ดีไซน์เซ็กซี่ไม่ซ้ำใคร กล้าโชว์แต่ยังดูแพง</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact">
+    <h2>ทักแชทเลย! พร้อมให้คำแนะนำ</h2>
+    <p>แอดไลน์ร้านได้ที่ LINE ID: <strong>@686sajfu</strong></p>
+    <a href="https://line.me/R/ti/p/@686sajfu" target="_blank">💬 ทัก LINE ตอนนี้</a>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 THE NAIL LABS & VIRTUAL VOGUE | Designed by Milin Wachira Akarayothin</p>
+    <p>ติดต่อ: <a href="mailto:cs.virtualvogue@gmail.com">cs.virtualvogue@gmail.com</a> | โทร: 099-349-3727</p>
+  </footer>
+
+</body>
+</html>
