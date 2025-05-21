@@ -21,55 +21,101 @@
       color: #333;
     }
 
-    /* === Hero Section === */
-    .hero {
-      background: url('https://gn.lnwfile.com/c6rxse.jpg') no-repeat center center/cover;
-      height: 90vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      color: white;
-      position: relative;
-    }
+  /* === Hero Section === */
+  .hero {
+    background: url('https://gn.lnwfile.com/c6rxse.jpg') no-repeat center center/cover;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+  }
 
-    .hero::before {
-      content: "";
-      position: absolute;
-      top: 0; left: 0; right: 0; bottom: 0;
-      background: rgba(0, 0, 0, 0.4);
-    }
+  .hero::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+  }
 
-    .hero-content {
-      position: relative;
-      z-index: 1;
-      max-width: 800px;
-      padding: 0 1rem;
-    }
+  .hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    padding: 0 1rem;
+  }
 
+  .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+  }
+
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    font-weight: 300;
+  }
+
+  /* === Hero Buttons === */
+  .hero-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+  }
+
+  .btn {
+    display: inline-block;
+    padding: 0.8rem 1.6rem;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  }
+
+  .btn.primary {
+    background: #ff4081;
+    color: white;
+  }
+
+  .btn.primary:hover {
+    background: #e91e63;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(233, 30, 99, 0.4);
+  }
+
+  .btn.secondary {
+    background: white;
+    color: #ff4081;
+    border: 2px solid #ff4081;
+  }
+
+  .btn.secondary:hover {
+    background: #ffe4ec;
+    color: #e91e63;
+    border-color: #e91e63;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(255, 64, 129, 0.2);
+  }
+
+  @media (max-width: 768px) {
     .hero h1 {
-      font-size: 3rem;
-      margin-bottom: 1rem;
-      font-weight: 700;
+      font-size: 2.2rem;
     }
 
     .hero p {
-      font-size: 1.2rem;
-      margin-bottom: 2rem;
-      font-weight: 300;
+      font-size: 1rem;
     }
 
-    .hero a {
-      background: #ff4081;
-      color: white;
-      padding: 0.8rem 1.5rem;
-      border-radius: 30px;
-      text-decoration: none;
-      font-weight: 500;
-    }
-
-    .hero a:hover {
-      background: #e91e63;
+    .btn {
+      font-size: 0.95rem;
+      padding: 0.7rem 1.4rem;
     }
 
     /* === Categories === */
@@ -182,39 +228,23 @@
     .contact a:hover {
       background: #1ebe5b;
     }
+       
+</style>
 
-    /* === Footer === */
-    footer {
-      background: #222;
-      color: #ccc;
-      padding: 2rem;
-      text-align: center;
-      font-size: 0.9rem;
-    }
-
-    footer a {
-      color: #ff80ab;
-      text-decoration: none;
-    }
-
-    footer a:hover {
-      text-decoration: underline;
-    }
-  </style>
 </head>
 
 <body>
 
   <!-- Hero Section -->
   <section class="hero">
-<div>
-<h1>ใส่แล้วเกิดทุกงาน เดรสสายฝอที่คุณต้องมี!</h1>
-<p>ดีไซน์สุดแซ่บสำหรับสาวมั่นใจ กล้าโชว์ กล้าเกิด พร้อมส่งตรงถึงมือคุณตอนนี้</p>
-<div class="hero-buttons">
-<a href="http://virtualvogue.lnwshop.com/category/1/%E0%B8%8A%E0%B8%B8%E0%B8%94%E0%B9%80%E0%B8%94%E0%B8%A3%E0%B8%AA" class="btn">✨ ช้อปเดี๋ยวนี้</a>
-<a href="http://virtualvogue.lnwshop.com/category" class="btn secondary">ดูสินค้าทั้งหมด</a>
-</div>
-</div>
+  <div class="hero-content">
+    <h1>ใส่แล้วเกิดทุกงาน เดรสสายฝอที่คุณต้องมี!</h1>
+    <p>ดีไซน์สุดแซ่บสำหรับสาวมั่นใจ กล้าโชว์ กล้าเกิด พร้อมส่งตรงถึงมือคุณตอนนี้</p>
+    <div class="hero-buttons">
+      <a href="http://virtualvogue.lnwshop.com/category/1/%E0%B8%8A%E0%B8%B8%E0%B8%94%E0%B9%80%E0%B8%94%E0%B8%A3%E0%B8%AA" class="btn primary">✨ ช้อปเดี๋ยวนี้</a>
+      <a href="http://virtualvogue.lnwshop.com/category" class="btn secondary">ดูสินค้าทั้งหมด</a>
+    </div>
+  </div>
 </section>
 
   <!-- Categories -->
@@ -523,19 +553,118 @@ padding: 0.8rem;
 </section>
 
   <!-- Contact -->
-  <section class="contact">
-    <h2>ทักแชทเลย! สั่งซื้อง่าย สะดวกรวดเร็ว</h2>
-    <p>แอดไลน์ร้าน VIRTUAL VOGUE ได้ที่ LINE ID: <strong>@686sajfu</strong></p>
-    <a href="https://line.me/R/ti/p/@686sajfu" target="_blank">💬 ทัก LINE ตอนนี้</a>
-       <p>แอดไลน์ร้าน THE NAIL LABS ได้ที่ LINE ID: <strong>@121wwfbq</strong></p>
-<a href="https://line.me/R/ti/p/@121wwfbq" target="_blank">💬 ทัก LINE ตอนนี้</a>
-  </section>
+<!-- Contact -->
+<section class="contact-section">
+  <h2>ทักแชทเลย! สั่งซื้อง่าย สะดวกรวดเร็ว</h2>
+  <p>แอดไลน์ร้าน VIRTUAL VOGUE ได้ที่ LINE ID: <strong>@686sajfu</strong></p>
+  <a href="https://line.me/R/ti/p/@686sajfu" target="_blank" class="line-btn">💬 ทัก LINE ตอนนี้</a>
+  
+  <p style="margin-top: 2rem;">แอดไลน์ร้าน THE NAIL LABS ได้ที่ LINE ID: <strong>@121wwfbq</strong></p>
+  <a href="https://line.me/R/ti/p/@121wwfbq" target="_blank" class="line-btn">💬 ทัก LINE ตอนนี้</a>
+</section>
+
+<style>
+  .contact-section {
+    background: #fbe8f9;
+    padding: 3rem 1.5rem;
+    text-align: center;
+    color: #880e4f;
+    font-family: 'Kanit', sans-serif;
+  }
+
+  .contact-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #ad1457;
+    font-weight: 600;
+  }
+
+  .contact-section p {
+    font-size: 1.1rem;
+    margin: 0.8rem 0;
+    font-weight: 400;
+  }
+
+  .contact-section strong {
+    color: #d81b60;
+  }
+
+  .line-btn {
+    display: inline-block;
+    background: #25D366;
+    color: white;
+    padding: 0.8rem 1.6rem;
+    border-radius: 30px;
+    margin-top: 0.6rem;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: background 0.3s ease, transform 0.3s ease;
+  }
+
+  .line-btn:hover {
+    background: #1ebe5b;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+
+  @media (max-width: 600px) {
+    .contact-section h2 {
+      font-size: 1.5rem;
+    }
+    .contact-section p {
+      font-size: 1rem;
+    }
+    .line-btn {
+      font-size: 0.95rem;
+      padding: 0.7rem 1.4rem;
+    }
+  }
+</style>
+
 
   <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 VIRTUAL VOGUE & THE NAIL LABS | Designed by N Commercial Group</p>
-    <p>ติดต่อ: <a href="mailto:cs.virtualvogue@gmail.com">cs.virtualvogue@gmail.com</a> | <a href="mailto:cs.virtualvogue@gmail.com">cs.thenaillab@gmail.com</a></p>
-  </footer>
+<!-- Footer -->
+<footer class="site-footer">
+  <p>&copy; 2025 VIRTUAL VOGUE & THE NAIL LABS | Designed by N Commercial Group</p>
+  <p>ติดต่อ: 
+    <a href="mailto:cs.virtualvogue@gmail.com">cs.virtualvogue@gmail.com</a> | 
+    <a href="mailto:cs.thenaillab@gmail.com">cs.thenaillab@gmail.com</a>
+  </p>
+</footer>
+
+<style>
+  .site-footer {
+    background: linear-gradient(90deg, #9370db, #d8b4f8); /* ไล่สีม่วงพาสเทล */
+    color: #fff;
+    padding: 2rem 1rem;
+    text-align: center;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    font-weight: 300;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.08);
+  }
+
+  .site-footer a {
+    color: #ffe0f0;
+    text-decoration: none;
+    font-weight: 400;
+    transition: color 0.3s ease, text-decoration 0.3s;
+  }
+
+  .site-footer a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+  }
+
+  @media (max-width: 600px) {
+    .site-footer {
+      font-size: 0.85rem;
+      padding: 1.5rem 1rem;
+    }
+  }
+</style>
+
 
 </body>
 </html>
